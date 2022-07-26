@@ -115,11 +115,13 @@ const deleteCmd = {
       progressBar
     });
 
-    const polarity = new Polarity(Logger);
-    const client = new PGClient(config);
+    let polarity, client;
     const simulateText = simulate ? 'Simulate: ' : '';
 
     try {
+      polarity = new Polarity(Logger);
+      client = new PGClient(config, Logger);
+
       await client.connect();
 
       const connectOptions = {
@@ -191,8 +193,11 @@ const deleteCmd = {
         Logger.info(`${simulateText}Disconnecting from Polarity`);
         await polarity.disconnect();
       }
-      Logger.info(`${simulateText}Disconnecting from Database`);
-      await client.disconnect();
+
+      if (client) {
+        Logger.info(`${simulateText}Disconnecting from Database`);
+        await client.disconnect();
+      }
     }
   }
 };
