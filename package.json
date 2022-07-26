@@ -1,11 +1,11 @@
 {
   "main": "main.js",
   "name": "polarity-annotation-manager",
-  "version": "0.0.1-beta",
+  "version": "0.0.3-beta",
   "private": true,
   "dependencies": {
     "polarity-node-rest-api": "polarityio/polarity-node-rest-api",
-    "pg": "~7.12.1",
+    "pg": "^8.7.3",
     "winston": "^3.3.3",
     "dotenv": "^6.0.0",
     "statman-stopwatch": "^2.13.0",
