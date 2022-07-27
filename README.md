@@ -56,6 +56,12 @@ The `<serverUrl>` should include the scheme (e.g., `https://my-polarity-server.c
 
 This command will not actually delete anything but instead simulates the deletion process so you can confirm that the configuration is valid.
 
+If any of the argument values to the tool contain special characters you should enclose those values in single quotes:
+
+```
+./polarity-annotation-manager.sh --url <serverUrl> --username '<username>' --password '<password>' --channel '<channelName>'
+```
+
 ## Using Environment Variables for Username & Password
 You can also pass in the `username`, and `password` with environment variables.
 
