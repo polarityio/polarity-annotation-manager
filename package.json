@@ -6,7 +6,7 @@
   "dependencies": {
     "polarity-node-rest-api": "polarityio/polarity-node-rest-api",
     "pg": "^8.7.3",
-    "winston": "^3.3.3",
+    "winston": "^3.10.0",
     "dotenv": "^6.0.0",
     "statman-stopwatch": "^2.13.0",
     "yargs": "^17.5.1",
