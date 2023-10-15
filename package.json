@@ -9,7 +9,7 @@
     "winston": "^3.3.3",
     "dotenv": "^6.0.0",
     "statman-stopwatch": "^2.13.0",
-    "yargs": "^17.5.1",
+    "yargs": "^17.7.2",
     "cli-progress": "^3.11.2"
   }
 }
